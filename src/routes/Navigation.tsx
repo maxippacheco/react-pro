@@ -3,7 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { Routes, Route, NavLink, Navigate } from 'react-router-dom';
 
 import logo from '../logo.svg';
-import { routes } from '../routes/routes';
+import { routes } from './routes';
 
 
 export const Navigation = () => {
