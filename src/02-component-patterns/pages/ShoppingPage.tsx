@@ -27,19 +27,21 @@ export const ShoppingPage = () => {
           flexWrap: "wrap",
         }}
       >
-        {products.map((product) => (
-          <ProductCard
-            key={product.id}
-            product={product}
-            className="bg-dark text-white"
-            value={ shoppingCart[ product.id ]?.count || 0 }
-            onChange={ onProductCountChange }
-          >
-            <ProductImage className="custom-image" />
-            <ProductTitle className="text-bold" />
-            <ProductButtons className="custom-buttons" />
-          </ProductCard>
-        ))}
+        {
+          products.map((product) => (
+            <ProductCard
+              key={product.id}
+              product={product}
+              className="bg-dark text-white"
+              value={ shoppingCart[ product.id ]?.count || 0 }
+              onChange={ onProductCountChange }
+            >
+              <ProductImage className="custom-image" />
+              <ProductTitle className="text-bold" />
+              <ProductButtons className="custom-buttons" />
+            </ProductCard>
+          ))
+        }
       </div>
 
       <div className="shopping-cart">
