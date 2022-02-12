@@ -35,7 +35,7 @@ export const ProductImage = ({ img = '', className, style }: Props) => {
 			src={ imgToShow } 
 			className={`${ styles.productImg } ${ className }`} 
 			style={ style }
-			alt="Product Image" 
+			alt="Product" 
 		/>
 	)
 }
